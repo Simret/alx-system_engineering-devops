@@ -1,2 +1,2 @@
 #!/bin/bash
-$((10#$BINARY))
+printf "%d %x\n" $((10#$BINARY))
