@@ -1,3 +1,2 @@
 #!/bin/bash
-
 ls -la | lc_cwd_content
