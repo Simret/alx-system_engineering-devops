@@ -1,2 +1,2 @@
 #!/bin/bash
-ibase=10n#$BINARY | bc
+$((10#$BINARY))
