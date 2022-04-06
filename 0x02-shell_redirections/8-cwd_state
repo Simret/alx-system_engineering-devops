@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -la | tee -a ~/lc_cwd_content
+ls -la >! lc_cwd_content

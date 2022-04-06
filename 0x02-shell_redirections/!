@@ -1,0 +1,1 @@
+ls -la | lc_cwd_content 8-cwd_state
