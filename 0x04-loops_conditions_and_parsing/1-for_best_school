@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
-# Looping to display "Holberton School" 10 times
-for _ in {1..10};
+# Looping to display "Best School" 10 times
+
+for _ in {1..10}
 do
     echo "Holberton School"
+
 done
