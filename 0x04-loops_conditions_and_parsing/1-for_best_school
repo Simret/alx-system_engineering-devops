@@ -4,5 +4,4 @@
 for _ in {1..10}
 do
 	echo "Holberton School"
-
 done
