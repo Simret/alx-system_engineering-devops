@@ -1,3 +1,3 @@
-#!/usr/bin/env bas
+#!/usr/bin/env bash
 # Terminates the infinate process
 pkill -9 "bash ./7-highlander" -f
