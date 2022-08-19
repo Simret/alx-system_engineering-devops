@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# www
+
+ps -auxf | grep "bash"
