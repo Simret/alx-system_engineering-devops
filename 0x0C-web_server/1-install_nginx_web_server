@@ -1,6 +1,14 @@
 #!/usr/bin/env bash
+<<<<<<< HEAD
 # script to install nginx
 sudo apt-get -y update
 sudo apt-get -y install nginx
 echo "Hello World!" | sudo tee /usr/share/nginx/html/index.html
 service nginx start
+=======
+# install nginx
+sudo apt-get -y update
+sudo apt-get -y install nginx
+sudo echo "Hello World!" > /var/www/html/index.nginx-debian.html
+sudo service nginx start
+>>>>>>> e36203e378ed8443575d64adb5fa7f00f6797923

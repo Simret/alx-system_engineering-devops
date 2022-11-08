@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Information about subdomains
+
+subs=( "www" "lb-01" "web-01" "web-02" )
+
+digFunc () {
+    sub=$2
+    dom=$1
+
+    dig "$sub.$dom" | grep -A1 'ANSWER SECTION:' | tail -1 | awk -v su=$sub '{print "The subdomain " su " is a " $4 " record and points to " $5;}'
+}
+
+if [[ $# -eq 1 ]]; then
+    for i in "${subs[@]}"; do
+        digFunc "$1" "$i"
+    done
+else
+    digFunc "$1" "$2"
+fi
