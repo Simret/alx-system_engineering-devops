@@ -1,1 +1,1 @@
-MYSQL installation on servers
+MYSQL installation on two servers
