@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 import requests
 from sys import argv
-""" Accessing a url with employee ID """
+""" Accessing a url with employee ID to return information """
 
 
 if __name__ == "__main__":
-    """ Get employees todo list """
+    """ Get employees data, using url with employee ID & return information """
     list = []
     a = requests.get('https://jsonplaceholder.typicode.com/users/{}/todos'
                      .format(argv[1]))
