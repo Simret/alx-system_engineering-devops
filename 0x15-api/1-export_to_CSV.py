@@ -2,10 +2,10 @@
 ''' Get some data from API '''
 
 
+import csv
 from requests import get
 import requests
 from sys import argv
-import csv
 
 if __name__ == "__main__":
     ''' To get data from API'''
