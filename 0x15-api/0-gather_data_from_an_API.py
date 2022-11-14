@@ -5,10 +5,7 @@ from sys import argv
 
 
 if __name__ == "__main__":
-    """
-    function to get employees todo list
-    progress
-    """
+    """ Get employees todo list """
     ID = int(argv[1])
     user = requests.get("https://jsonplaceholder.typicode.com/users/{}".
                         format(ID)).json()
