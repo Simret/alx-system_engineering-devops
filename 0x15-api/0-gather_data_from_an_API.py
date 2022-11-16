@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''Retrieves data using a RESTful API'''
+'''Retrieve data using a RESTful API'''
 
 
 if __name__ == '__main__':
