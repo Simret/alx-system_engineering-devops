@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import requests
 from sys import argv
-""" Accessing a url with employee ID to return information """
+""" Accessing a url with employee ID to return information about employee"""
 
 
 if __name__ == "__main__":
