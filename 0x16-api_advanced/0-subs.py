@@ -1,17 +1,19 @@
 #!/usr/bin/python3
+"""API"""
 import requests
-"""A function that queries reddit api and returns number of subscribers"""
 
 
 def number_of_subscribers(subreddit):
-    """A function to get number of subscribers"""
-    url = "https://api.reddit.com/r/{}/about".format(subreddit)
-    header = {'User-Agent': 'CustomClient/1.0'}
-    req = requests.get(url, headers=header, allow_redirects=False)
-    if req.status_code != 200:
-        return (0)
-    req = req.json()
-    if "data" in req:
-        return (req.get("data").get("subscribers"))
-    else:
-        return (0)
+    """
+    a function that queries the Reddit API
+    and returns the number of subscribers
+    """
+
+    data = requests.get("https://www.reddit.com/r/{}/about.json"
+                        .format(subreddit),
+                        headers={"User-Agent": "My-User-Agent"},
+                        allow_redirects=False)
+    if data.status_code >= 300:
+        return 0
+    data_dict = data.json()
+    return data_dict["data"]["subscribers"]
